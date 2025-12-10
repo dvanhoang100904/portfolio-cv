@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script>
+        const savedTheme = localStorage.getItem('theme');
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        document.documentElement.setAttribute(
+            'data-theme',
+            savedTheme || (prefersDark ? 'dark' : 'light')
+        );
+    </script>
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Dao Van Hoang</title>
+
+        <!-- google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- font awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+            integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <!-- bootstrap css -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+        <!-- my css -->
+        <link rel="stylesheet" href="assets/css/style.css" />
+    </head>
+    <body>
+        <!-- particles background -->
+        <div id="particles-js" data-js-particles aria-hidden="true" role="presentation"></div>
+
+        <!-- nav start -->
+        <nav class="navbar navbar-expand-lg navbar-light border-0" data-js-nav>
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#!" data-js-logo>Dao Van Hoang</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home" data-js-nav-link>Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about" data-js-nav-link>About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#experience" data-js-nav-link>Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects" data-js-nav-link>Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact" data-js-nav-link>Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- nav end -->
+
+        <!-- hero start -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 hero-content">
+                        <h1 class="hero-title" data-js="hero-title">Dao Van Hoang</h1>
+                        <h2 class="hero-subtitle" data-js="hero-subtitle">
+                            <span class="typing-text"></span>
+                            <span class="cursor">|</span>
+                        </h2>
+                    </div>
+                    <div class="col-lg-6 hero-image">
+                        <div class="profile-container" data-js="profile-3d">
+                            <img
+                                src="./assets/img/avatar2.jpg"
+                                alt="Profile Image"
+                                class="img-fluid profile-img"
+                            />
+                            <div class="profile-glare"></div>
+                            <div class="profile-border"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-scroll-indicator" data-js="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <div class="arrows">
+                    <span class="arrow"></span>
+                    <span class="arrow"></span>
+                    <span class="arrow"></span>
+                </div>
+            </div>
+        </section>
+        <!-- hero end -->
+
+        <!-- about start -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title text-center animate-on-scroll">About Me</h2>
+                <div class="row">
+                    <div class="col-lg-7 animate-on-scroll">
+                        <div class="card card-3d mb-4">
+                            <div class="card-body p-4">
+                                <h3 class="mb-3">Personal Info</h3>
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <p class="mb-2">
+                                            <strong class="me-1">Name:</strong>
+                                            Dao Van Hoang
+                                        </p>
+                                        <p class="mb-2">
+                                            <strong class="me-1">Age:</strong>
+                                            21
+                                        </p>
+
+                                        <p class="mb-2">
+                                            <strong class="me-1">Phone:</strong>
+                                            +84 123 456 789
+                                        </p>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <p class="mb-2">
+                                            <strong class="me-1">Email:</strong>
+                                            daovanhoang100904@gmail.com
+                                        </p>
+                                        <p class="mb-2">
+                                            <strong>GitHub:</strong>
+                                            <a
+                                                class="text-decoration-none text-color"
+                                                href="https://github.com/dvanhoang100904"
+                                                target="_blank"
+                                            >
+                                                dvanhoang100904
+                                            </a>
+                                        </p>
+
+                                        <p>
+                                            <strong class="me-1">Address:</strong>
+                                            Thu Duc District, Ho Chi Minh City
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card-3d">
+                            <div class="card-body p-4">
+                                <!-- Skills -->
+                                <h3 class="mb-3">My Skills</h3>
+                                <!-- Frontend -->
+                                <div class="skill-item">
+                                    <h6>HTML & CSS & JavaScript & Bootstrap 5</h6>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="90%"></div>
+                                    </div>
+                                </div>
+                                <!-- Backend -->
+                                <div class="skill-item">
+                                    <h6>PHP & Laravel & MVC & RESTful API</h6>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="85%"></div>
+                                    </div>
+                                </div>
+                                <!-- Database -->
+                                <div class="skill-item">
+                                    <h6>MySQL & SQL Server</h6>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="80%"></div>
+                                    </div>
+                                </div>
+                                <!-- Tools -->
+                                <div class="skill-item">
+                                    <h6>Git & Github & SmartGit & VS code</h6>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="75%"></div>
+                                    </div>
+                                </div>
+                                <!-- Language -->
+                                <div class="skill-item">
+                                    <h6>English</h6>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="70%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- About me -->
+                    <div class="col-lg-5 animate-on-scroll delay-1">
+                        <div class="card card-3d h-100">
+                            <div class="card-body p-4">
+                                <h3 class="mb-3">About me</h3>
+                                <p>
+                                    To join a professional environment as a PHP Developer Intern,
+                                    where I can expand my knowledge in Laravel, RESTful API
+                                    development, and database design, while contributing to real
+                                    projects through coding, testing, and clear documentation.
+                                </p>
+                                <div class="mt-4">
+                                    <h5 class="mb-3">Education</h5>
+                                    <div class="d-flex mb-3">
+                                        <div class="flex-shrink-0">
+                                            <div
+                                                class="bg-primary bg-gradient text-white rounded p-2"
+                                            >
+                                                <i class="fas fa-graduation-cap"></i>
+                                            </div>
+                                        </div>
+                                        <div class="ms-3">
+                                            <h6 class="mb-2">Software Technology</h6>
+                                            <p class="mb-2">Thu Duc College of Technology</p>
+                                            <p>September 21, 2022 - 2025</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- about end -->
+
+        <!-- experience start -->
+        <section id="experience" class="experience">
+            <div class="container">
+                <h2 class="section-title text-center animate-on-scroll">My Experience</h2>
+                <div class="timeline">
+                    <!-- Experience 1 -->
+                    <div class="timeline-item animate-on-scroll delay-1">
+                        <div class="timeline-content card-3d">
+                            <h5 class="mb-3">Website Document management and sharing system.</h5>
+                            <p>
+                                Built a web-based document management and sharing system with
+                                multi-file upload, online document viewing, version control (new
+                                revisions, compare, restore), permission and sharing management,
+                                violation reporting workflow, and advanced full-text search with
+                                filtering by type, tag, subject, and department.
+                            </p>
+                        </div>
+                        <div class="timeline-date small">2025 – 2026</div>
+                        <div class="timeline-dot"></div>
+                    </div>
+
+                    <!-- Experience 2 -->
+                    <div class="timeline-item animate-on-scroll">
+                        <div class="timeline-content card-3d">
+                            <h5 class="mb-3">Website Selling Electronics</h5>
+                            <p>
+                                Developed an e-commerce website for electronics with full CRUD for
+                                products, categories, orders, and users, integrated shopping cart,
+                                order processing, and product search with pagination.
+                            </p>
+                        </div>
+                        <div class="timeline-date small">2025 – 2026</div>
+                        <div class="timeline-dot"></div>
+                    </div>
+
+                    <!-- Experience 3 -->
+                    <div class="timeline-item animate-on-scroll">
+                        <div class="timeline-content card-3d">
+                            <h5 class="mb-3">Website Selling Drinks</h5>
+                            <p>
+                                Built an e-commerce website for drinks with product, category, and
+                                user management (CRUD), shopping cart checkout, and product search
+                                with pagination.
+                            </p>
+                        </div>
+                        <div class="timeline-date small">2024 – 2025</div>
+                        <div class="timeline-dot"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- experience end-->
+
+        <!-- projects start -->
+        <section id="projects" class="projects py-5">
+            <div class="container">
+                <h2
+                    class="section-title text-center animate-on-scroll"
+                    data-aos="fade-down"
+                    data-aos-duration="800"
+                >
+                    My Projects
+                </h2>
+                <div class="row gy-4">
+                    <!-- Project 1 -->
+                    <div
+                        class="col-lg-4 col-md-6 animate-on-scroll"
+                        data-aos="fade-up"
+                        data-aos-delay="100"
+                    >
+                        <div class="project-card card-3d">
+                            <div class="project-card-inner">
+                                <div class="project-card-face project-card-front">
+                                    <img
+                                        src="./assets/img/document.png"
+                                        class="img-fluid project-img"
+                                        loading="lazy"
+                                    />
+                                    <div class="project-glow"></div>
+                                </div>
+                                <div class="project-card-face project-card-back">
+                                    <div class="p-5 h-100 d-flex flex-column text-light">
+                                        <h5 class="mb-5 fw-bold">
+                                            Build a document management and sharing system
+                                        </h5>
+                                        <div class="project-badges mb-3">
+                                            <span class="badge badge-framework">PHP</span>
+                                            <span class="badge badge-framework">Laravel</span>
+                                            <span class="badge badge-framework">MVC</span>
+                                            <span class="badge badge-framework">API</span>
+                                            <span class="badge badge-data">MySQL</span>
+                                            <span class="badge badge-theme">HTML</span>
+                                            <span class="badge badge-theme">CSS</span>
+                                            <span class="badge badge-theme">JavaScript</span>
+                                            <span class="badge badge-theme">Bootstrap</span>
+                                            <span class="badge badge-theme">Vue</span>
+                                        </div>
+
+                                        <div
+                                            class="project-actions mt-auto d-flex justify-content-center gap-3"
+                                        >
+                                            <a
+                                                href="#!"
+                                                class="btn btn-sm btn-primary btn-3d"
+                                                target="_blank"
+                                                aria-label="View live project"
+                                            >
+                                                <i class="fas fa-eye me-1"></i>
+                                                Demo
+                                            </a>
+                                            <a
+                                                href="https://github.com/dvanhoang100904/group-a"
+                                                class="btn btn-sm btn-outline-light btn-3d"
+                                                target="_blank"
+                                                aria-label="View source code"
+                                            >
+                                                <i class="fas fa-code me-1"></i>
+                                                Code
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div
+                        class="col-lg-4 col-md-6 animate-on-scroll"
+                        data-aos="fade-up"
+                        data-aos-delay="100"
+                    >
+                        <div class="project-card card-3d">
+                            <div class="project-card-inner">
+                                <div class="project-card-face project-card-front">
+                                    <img
+                                        src="./assets/img/eshop.png"
+                                        class="img-fluid project-img"
+                                        loading="lazy"
+                                    />
+                                    <div class="project-glow"></div>
+                                </div>
+                                <div class="project-card-face project-card-back">
+                                    <div class="p-5 h-100 d-flex flex-column text-light">
+                                        <h5 class="mb-5 fw-bold">Website Selling Electronics</h5>
+
+                                        <div class="project-badges mb-3">
+                                            <span class="badge badge-framework">PHP</span>
+                                            <span class="badge badge-framework">Laravel</span>
+                                            <span class="badge badge-framework">MVC</span>
+                                            <span class="badge badge-data">MySQL</span>
+                                            <span class="badge badge-theme">HTML</span>
+                                            <span class="badge badge-theme">CSS</span>
+                                            <span class="badge badge-theme">JavaScript</span>
+                                            <span class="badge badge-theme">Bootstrap</span>
+                                        </div>
+
+                                        <div
+                                            class="project-actions mt-auto d-flex justify-content-center gap-3"
+                                        >
+                                            <a
+                                                href="#!"
+                                                class="btn btn-sm btn-primary btn-3d"
+                                                target="_blank"
+                                                aria-label="View live project"
+                                            >
+                                                <i class="fas fa-eye me-1"></i>
+                                                Demo
+                                            </a>
+                                            <a
+                                                href="https://github.com/dvanhoang100904/electro-eshop"
+                                                class="btn btn-sm btn-outline-light btn-3d"
+                                                target="_blank"
+                                                aria-label="View source code"
+                                            >
+                                                <i class="fas fa-code me-1"></i>
+                                                Code
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div
+                        class="col-lg-4 col-md-6 animate-on-scroll"
+                        data-aos="fade-up"
+                        data-aos-delay="100"
+                    >
+                        <div class="project-card card-3d">
+                            <div class="project-card-inner">
+                                <div class="project-card-face project-card-front">
+                                    <img
+                                        src="./assets/img/drinks.jpg"
+                                        class="img-fluid project-img"
+                                        loading="lazy"
+                                    />
+                                    <div class="project-glow"></div>
+                                </div>
+                                <div class="project-card-face project-card-back">
+                                    <div class="p-5 h-100 d-flex flex-column text-light">
+                                        <h5 class="mb-5 fw-bold">Website Selling Drinks</h5>
+
+                                        <div class="project-badges mb-3">
+                                            <span class="badge badge-framework">PHP</span>
+                                            <span class="badge badge-data">Mysql</span>
+                                            <span class="badge badge-theme">HTML</span>
+                                            <span class="badge badge-theme">CSS</span>
+                                            <span class="badge badge-theme">JavaScript</span>
+                                            <span class="badge badge-theme">Bootstrap</span>
+                                        </div>
+
+                                        <div
+                                            class="project-actions mt-auto d-flex justify-content-center gap-3"
+                                        >
+                                            <a
+                                                href="#!"
+                                                class="btn btn-sm btn-primary btn-3d"
+                                                target="_blank"
+                                                aria-label="View live project"
+                                            >
+                                                <i class="fas fa-eye me-1"></i>
+                                                Demo
+                                            </a>
+                                            <a
+                                                href="https://github.com/dvanhoang100904/taste-time"
+                                                class="btn btn-sm btn-outline-light btn-3d"
+                                                target="_blank"
+                                                aria-label="View source code"
+                                            >
+                                                <i class="fas fa-code me-1"></i>
+                                                Code
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- projects end -->
+
+        <!-- contact start -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title text-center animate-on-scroll">Get In Touch</h2>
+                <div class="row">
+                    <div class="col-lg-7 mb-4 mb-lg-0 animate-on-scroll">
+                        <div class="contact-form card-3d">
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            placeholder="Your Name"
+                                        />
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <input
+                                            type="email"
+                                            class="form-control"
+                                            placeholder="Your Email"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="tel" class="form-control" placeholder="Phone" />
+                                </div>
+                                <div class="mb-3">
+                                    <textarea
+                                        class="form-control"
+                                        placeholder="Your Message"
+                                    ></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 animate-on-scroll delay-1">
+                        <div class="contact-info card-3d">
+                            <h3 class="mb-4">Contact Info</h3>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h5>Location</h5>
+                                    <p>Ho Chi Minh City, Vietnam</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h5>Email</h5>
+                                    <p>daovanhoang100904@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div>
+                                    <h5>Phone</h5>
+                                    <p>+84 123 456 789</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- contact end -->
+
+        <!-- footer -->
+        <footer class="footer text-center">
+            <div class="container">
+                <p class="mb-2">Copyright © 2025 Dao Van Hoang.</p>
+                <div class="social-links">
+                    <a href="#!" class="mx-2"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#!" class="mx-2"><i class="fab fa-twitter"></i></a>
+                    <a href="#!" class="mx-2"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#!" class="mx-2"><i class="fab fa-github"></i></a>
+                    <a href="#!" class="mx-2"><i class="fab fa-instagram"></i></a>
+                    <a href="#!" class="mx-2"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </footer>
+
+        <!-- back to top -->
+        <a href="#!" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+        <!-- bootstrap js -->
+        <script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+        <!-- my js -->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
